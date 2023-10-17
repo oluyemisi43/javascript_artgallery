@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>art_gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>art_gallery</h1>
+        <div class="gallery"> 
+            <figure class="gallery__item gallery__item--1" id="fig1" onclick="event.stopPropagation(); getImage(this.id, event)" >
+                <img class="gallery__img" src="images/cotton.jpg" alt="cotton">
+            </figure>
+
+            <figure class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); getImage(this.id, event)">
+                <img class="gallery__img" src="images/gothic.jpg" alt="gothic">
+            </figure>
+
+            <figure class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); getImage(this.id, event)">
+                <img class="gallery__img" src="images/woman.jpg" alt="woman">
+            </figure>
+
+            <figure class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); getImage(this.id, event)">
+                <img class="gallery__img" src="images/fireplace.jpg" alt="fireplace">
+            </figure>
+            <figure class="gallery__item gallery__item--5" id="fig5" onclick="event.stopPropagation(); getImage(this.id, event)">
+                <img class="gallery__img" src="images/waves.jpg" alt="waves">
+            </figure>
+
+            <figure class="gallery__item gallery__item--6" id="fig6" onclick="event.stopPropagation(); getImage(this.id, event)">
+                <img class="gallery__img" src="images/buddah.jpg" alt="buddah">
+            </figure>
+        </div>
+    </div>
+
+    <div id="popup-window">
+        <h1 id="popup-title"></h1>
+        <p id="popup-content"></p>
+        <br><br><br>
+        <button id="close-button">Close</button>
+    </div>
+    
+</body>
+</html>
